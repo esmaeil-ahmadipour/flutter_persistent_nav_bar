@@ -22,9 +22,9 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Widget> _buildScreens() {
     return [
       HomeScreen(),
-      HomeScreen(),
-      HomeScreen(),
-      HomeScreen(),
+      HomeScreen2(),
+      HomeScreen3(),
+      SettingsScreen(),
     ];
   }
 
@@ -32,31 +32,31 @@ class _MyHomePageState extends State<MyHomePage> {
     return [
       PersistentBottomNavBarItem(
         icon: Icon(Icons.home),
-        title: ("Home"),
+        title: ("خانه"),
         activeColor: Colors.blue,
         inactiveColor: Colors.grey,
-        isTranslucent: true,
+        isTranslucent: false,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(Icons.search),
-        title: ("Search"),
+        title: ("جستجو"),
         activeColor: Colors.teal,
         inactiveColor: Colors.grey,
-        isTranslucent: true,
+        isTranslucent: false,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(Icons.message),
-        title: ("Chat"),
+        title: ("چت"),
         activeColor: Colors.deepOrange,
         inactiveColor: Colors.grey,
-        isTranslucent: true,
+        isTranslucent: false,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(Icons.settings),
-        title: ("Settings"),
+        title: ("تنظیمات"),
         activeColor: Colors.indigo,
         inactiveColor: Colors.grey,
-        isTranslucent: true,
+        isTranslucent: false,
       ),
     ];
   }
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
         items:
         _navBarsItems(), // Redundant here but defined to demonstrate for other than custom style
         confineInSafeArea: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         handleAndroidBackButtonPress: true,
         onItemSelected: (int) {
           setState(
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         itemCount: 4,
         navBarStyle:
-        NavBarStyle.style3 // Choose the nav bar style with this property
+        NavBarStyle.style6// Choose the nav bar style with this property
     );
   }
 }

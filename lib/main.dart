@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Persistent Bottom Navigation Bar example project',
       theme: ThemeData(
+        fontFamily: 'Vazir',
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(),
