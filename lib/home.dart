@@ -3,14 +3,14 @@ import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'custom-widget.dart';
 import 'screens.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key}) : super(key: key);
+class BottomNavBarPage extends StatefulWidget {
+  BottomNavBarPage({Key key}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _BottomNavBarPageState createState() => _BottomNavBarPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _BottomNavBarPageState extends State<BottomNavBarPage> {
   PersistentTabController _controller;
 
   @override
@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List<PersistentBottomNavBarItem> _navBarsItems() {
     return [
-      PersistentBottomNavBarItem(
+      PersistentBottomNavBarItem(translucencyPercentage: 15.0,
         icon: Icon(Icons.home),
         title: ("خانه"),
         activeColor: Colors.blue,
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         itemCount: 4,
         navBarStyle:
-        NavBarStyle.style6// Choose the nav bar style with this property
+        NavBarStyle.style8// Choose the nav bar style with this property
     );
   }
 }

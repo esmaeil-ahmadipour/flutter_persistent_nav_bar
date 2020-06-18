@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Vazir',
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: BottomNavBarPage(),
     );
   }
 }
